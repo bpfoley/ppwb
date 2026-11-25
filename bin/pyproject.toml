@@ -1,0 +1,14 @@
+[project]
+name = "ppsmq"
+version = "0.0"
+requires-python = ">=3.8"
+
+[tool.ruff.lint]
+extend-select = ["ANN"]
+ignore = ["UP009"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.6",
+    "ty>=0.0.111",
+]
